@@ -2,8 +2,8 @@ const triangle = document.querySelector('.triangle');
 const container = document.querySelector('.container');
 
 let dot = document.createElement('div');
-dot.style.width = '1px';
-dot.style.height = '1px';
+dot.style.width = '2px';
+dot.style.height = '2px';
 dot.style.backgroundColor = 'black';
 dot.style.borderRadius = '50%';
 container.append(dot);
@@ -19,8 +19,8 @@ let prevRes = {
 
 const drawDot = () => {
   let dot = document.createElement('div');
-  dot.style.width = '1px';
-  dot.style.height = '1px';
+  dot.style.width = '2px';
+  dot.style.height = '2px';
   dot.style.backgroundColor = 'coral';
   dot.style.borderRadius = '50%';
 
@@ -52,7 +52,7 @@ const drawDot = () => {
 for(let i = 1; i <= 20000; i++) {
   setTimeout(() => {
     drawDot()
-  }, 10 * i)
+  }, 2 * i)
 }
 
 function rand() {
